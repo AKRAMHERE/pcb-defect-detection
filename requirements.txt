@@ -1,0 +1,25 @@
+# PCB Defect Detection System — Python Dependencies
+# Tested on Python 3.10+, CPU-only (no CUDA required)
+
+# ── Core inference ──────────────────────────────────────────────────────────
+ultralytics>=8.0.200     # YOLOv8 — training, inference, export
+torch>=2.0.0             # PyTorch CPU build (auto-selected by ultralytics)
+torchvision>=0.15.0
+
+# ── Computer vision ─────────────────────────────────────────────────────────
+opencv-python>=4.8.0     # Image/video capture, annotation rendering
+Pillow>=10.0.0           # Image format support
+
+# ── Data processing ─────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0            # CSV/DataFrame analysis
+
+# ── Configuration ───────────────────────────────────────────────────────────
+PyYAML>=6.0
+
+# ── Optional: dataset download ──────────────────────────────────────────────
+# roboflow>=1.1.0        # Uncomment to enable automatic dataset download
+
+# ── Development / testing ───────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-cov>=4.0.0
