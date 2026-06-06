@@ -316,16 +316,6 @@ detections, summary = processor.inspect_directory("data/test_images/")
 reporter.generate_full_report(detections, summary)
 ```
 
----
-
-## Resume Description
-
-> **PCB Defect Detection and Automated Inspection System** — Developed a YOLOv8n-based automated PCB inspection system detecting 6 manufacturing defect classes (missing components, open circuits, short circuits, mouse bites, spurious copper, spur defects). Implemented CPU-optimized real-time inference pipeline (avg. 48 ms/frame, ~20 FPS on i7) with OpenCV-based defect localization, confidence-scored bounding box rendering, and live FPS HUD. Built modular inspection architecture (detector, trainer, image/video processor, report generator) with structured CSV/JSON output for MES integration, pass/fail verdict logic, and 30-test pytest suite. Trained and evaluated YOLOv8n on Roboflow PCB dataset achieving mAP@50 >0.85.
->
 > **Stack:** Python · PyTorch · Ultralytics YOLOv8 · OpenCV · NumPy · YAML · pytest
 
----
 
-## License
-
-MIT
